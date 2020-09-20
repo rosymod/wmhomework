@@ -16,13 +16,6 @@ public class MainCtrl {
     @Autowired
     private AnalysisSvc analysisSvc;
 
-    @RequestMapping("/test")
-    public ModelAndView test(){
-        ModelAndView mav = new ModelAndView("test");
-        mav.addObject("name","test");
-        return mav;
-    }
-
     @GetMapping("/main")
     public ModelAndView main(AnalysisBean analysis){
         ModelAndView mav = new ModelAndView("main");
