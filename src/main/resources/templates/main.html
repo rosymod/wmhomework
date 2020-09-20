@@ -1,0 +1,68 @@
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>WM homework</title>
+    <style>
+        div {
+            float: left;
+            padding: 0px;
+            margin: 0px;
+            min-height: 30px;
+        }
+
+        textarea {
+            width: 95%;
+            border:1px solid #999999;
+            margin:0px;
+            padding:0px;
+        }
+
+        .label {
+            width: 20%;
+        }
+
+        .content {
+            width: 80%;
+        }
+
+        .error {
+            color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="/main">
+        <div style="width:100%">
+            <div class="label">URL</div>
+            <div class="content">
+                <input type="text" name="url" th:value="${model.url}">
+            </div>
+            <div class="label">타입</div>
+            <div class="content">
+                <select name="type" th:value="${model.type}">
+                    <option value="0">전체</option>
+                    <option value="1">HTML 태그 제외</option>
+                </select>
+            </div>
+            <div class="label">단위</div>
+            <div class="content">
+                <input type="number" name="unit" th:value="${model.unit}">
+            </div>
+            <div class="label">
+                <input type="submit" value="출력">
+            </div>
+            <div class="content">
+                <span class="error" th:text="${model.errMsg}"></span>
+            </div>
+            <div class="label">값 <span th:if="${model.value != null}" th:text="${model.value.length()}"></span></div>
+            <div class="content">
+                <textarea th:text="${model.value}" rows="30"></textarea>
+            </div>
+            <div class="label">나머지 <span th:if="${model.left != null}" th:text="${model.left.length()}"></span></div>
+            <div class="content">
+                <textarea th:text="${model.left}" rows="30"></textarea>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

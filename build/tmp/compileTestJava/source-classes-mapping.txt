@@ -1,0 +1,3 @@
+com/wemakeprice/homework/kst/KstApplicationTests.java
+ com.wemakeprice.homework.kst.KstApplicationTests
+ com.wemakeprice.homework.kst.KstApplicationTests$1

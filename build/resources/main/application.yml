@@ -1,0 +1,14 @@
+server:
+ servlet:
+  context-path: /
+ port : 8800
+spring:
+ thymeleaf:
+  prefix: classpath:templates/
+  suffix: .html
+  cache: false
+ http:
+  encoding:
+   charset: UTF-8
+   enabled: true
+   force: true

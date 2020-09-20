@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.wemakeprice.homework.kst.KstApplicationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-09-20T03:19:05" hostname="gimseongtaeui-MacBookPro-KCP.local" time="0.531">
+  <properties/>
+  <testcase name="sortWords()" classname="com.wemakeprice.homework.kst.KstApplicationTests" time="0.526"/>
+  <testcase name="contextLoads()" classname="com.wemakeprice.homework.kst.KstApplicationTests" time="0.003"/>
+  <system-out><![CDATA[12:19:03.490 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+12:19:03.504 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+12:19:03.535 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.wemakeprice.homework.kst.KstApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+12:19:03.556 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.wemakeprice.homework.kst.KstApplicationTests], using SpringBootContextLoader
+12:19:03.560 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.wemakeprice.homework.kst.KstApplicationTests]: class path resource [com/wemakeprice/homework/kst/KstApplicationTests-context.xml] does not exist
+12:19:03.561 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.wemakeprice.homework.kst.KstApplicationTests]: class path resource [com/wemakeprice/homework/kst/KstApplicationTestsContext.groovy] does not exist
+12:19:03.561 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.wemakeprice.homework.kst.KstApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:19:03.562 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.wemakeprice.homework.kst.KstApplicationTests]: KstApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:19:03.606 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.wemakeprice.homework.kst.KstApplicationTests]
+12:19:03.669 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/sungtae/Work/source/WM_HOMEWORK/kst/build/classes/java/main/com/wemakeprice/homework/kst/KstApplication.class]
+12:19:03.670 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.wemakeprice.homework.kst.KstApplication for test class com.wemakeprice.homework.kst.KstApplicationTests
+12:19:03.771 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.wemakeprice.homework.kst.KstApplicationTests]: using defaults.
+12:19:03.772 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+12:19:03.784 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+12:19:03.785 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+12:19:03.785 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@780ba1d5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1eb18149, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@39294210, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6660a07e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4340b06e, org.springframework.test.context.event.EventPublishingTestExecutionListener@5169da86, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@22232b79, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@41a31c13, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7a60789, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@18045011, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2347c88b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7add0b74]
+12:19:03.789 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5f4388b testClass = KstApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@25c5798b testClass = KstApplicationTests, locations = '{}', classes = '{class com.wemakeprice.homework.kst.KstApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@56d60abe, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@110e70c9, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@43018311, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@74db586a, org.springframework.boot.test.context.SpringBootTestArgs@1], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+12:19:03.829 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.4.RELEASE)
+
+2020-09-20 12:19:04.194  INFO 85496 --- [    Test worker] c.w.homework.kst.KstApplicationTests     : Starting KstApplicationTests on gimseongtaeui-MacBookPro-KCP.local with PID 85496 (started by sungtae in /Users/sungtae/Work/source/WM_HOMEWORK/kst)
+2020-09-20 12:19:04.196  INFO 85496 --- [    Test worker] c.w.homework.kst.KstApplicationTests     : No active profile set, falling back to default profiles: default
+2020-09-20 12:19:05.524  INFO 85496 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-20 12:19:05.932  INFO 85496 --- [    Test worker] c.w.homework.kst.KstApplicationTests     : Started KstApplicationTests in 2.088 seconds (JVM running for 3.287)
+v | a = 21
+A | v = -53
+A | v = -53
+A | a = -32
+e | a = 4
+e | v = -17
+d | e = -1
+d | a = 3
+f | d = 2
+f | v = -16
+f | e = 1
+A | e = -36
+A | a = -32
+A | A = 0
+S | d = -17
+S | f = -19
+S | v = -35
+e | e = 0
+e | S = 18
+e | f = -1
+s | e = 14
+s | S = 32
+s | v = -3
+D | e = -33
+D | a = -29
+D | e = -33
+D | d = -32
+f | e = 1
+f | S = 19
+f | f = 0
+A | e = -36
+A | D = -3
+A | A = 0
+A | a = -32
+a | e = -4
+a | a = 0
+a | d = -3
+a | D = 29
+A
+A
+A
+a
+a
+D
+d
+e
+e
+f
+f
+S
+s
+v
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
